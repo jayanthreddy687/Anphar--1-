@@ -1,4 +1,4 @@
 # Anphar--1-
-A website for dogs :D
+A website for a Pharma company
 
-check this [link](https://yasararafathali.github.io/Tindog/) for the page 
+check this [link](https://jayanthreddy687.github.io/Anphar--1-/) for the page 
