@@ -1,0 +1,462 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  
+width:100vw;
+height:100%;
+}
+
+body{
+  /* font-family: 'Coda', cursive; */
+  font-family:'Raleway', sans-serif;
+  width:100%;
+  height:100%;
+  /* font-size: .9rem; */
+  
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-black{
+  background-color: #1d2228;
+}
+/* ============================================= Navbar ============================== */
+#logo {
+  padding-left: 1em;
+}
+
+#navbar {
+  transition: top 0.5s;
+  background-color: #F4F7F6;
+  
+}
+
+.navLogo {
+  width: 10%;
+}
+
+.navbarNav{
+  background-color: #172A3A;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.25);
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.nav-link{
+color: #222;
+}
+.nav-link:hover{
+  color: #2b90d9;
+}
+.current .nav-link{
+  color: #2b90d9;
+}
+
+.current{
+    border-bottom: 2px #2b90d9 solid;
+  
+}
+ .dropdown-menu a:hover{
+  color: #2b90d9;
+ }
+ 
+
+/* ==================================== Landing Banner ================================== */
+.head{
+  font-family: 'Coda', cursive;
+  color: #F4F7F6;
+  font-size: 3rem;
+}
+
+
+.bg-img {
+  background-image: url('../Images/iobg4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* color: #fff; */
+  /* height: auto; */
+}
+
+/* =============================================About page Banner============================================ */
+
+.bg-doc{
+  height: 100vh;
+  background: url('../Images/bg-cap.png'), url('../Images/bgp.jpg');
+  background-attachment: fixed, fixed;
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  
+}
+
+
+.abt-txt{
+  border-radius: 20px;
+  background-color: rgba(68,193,239,.3);
+}
+
+/* ============================================== Board of directors ====================== */
+
+.board{
+ 
+  background: #eeeeee;
+  background-attachment:  fixed;
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  height: 100vh ;
+  padding-top: 2%;
+  
+  /* height: 60vh; */
+  
+}
+.bod{
+  color: #14213d;
+
+}
+
+button {
+  align-self: center;
+}
+
+
+.bod-card{
+  background: #F4F7F6;
+  border: #000 1px solid;
+  padding-top: 15px;
+}
+
+.card{
+  margin: 0.5%;
+}
+
+
+.d-flex{
+  flex-wrap: nowrap;
+}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+.card-img{
+  object-fit: cover;
+}
+
+
+/* ========================================== Tabs========================================= */
+
+.tabs{
+  background: url('../Images/parlx-bg-tab.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 120px;
+  height: auto;
+}
+
+.box-tab{
+  background-color: rgba(248,	249,	251, .85);
+  border-radius: 5%;
+}
+
+.lined .nav-link {
+  border: none;
+  
+  color: #172A3A;
+  border-bottom: 3px solid transparent;
+}
+.lined .nav-link:hover{
+  color: #2b90d9;
+}
+.lined .nav-link:hover {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+.lined .nav-link.active {
+  background: none;
+  color: #555;
+  border-color: #2b90d9;
+}
+
+/* ===========================Tabs Content ==================== */
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+
+/* Tabs*/
+/* section {
+    padding: 25px 5px;
+} */
+
+
+
+
+/* ============================================= Contact ============================================== */
+
+#contact{
+ 
+  background: url('../Images/bgp.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+
+
+/* =========== contact form  ======================== */
+
+
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form input , 
+.contact-form textarea{
+  background-color: transparent;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #5543ca;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+/* .contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+} */
+.contact-form .label {
+  /* position: absolute;
+  left: 20px;
+  bottom: 11px; */
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  /* color: #5543ca; */
+  cursor: text;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, 
+  -webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+   background: #064497;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width:200px;
+  cursor: pointer;
+}
+
+
+/* ==================================   Products   ===================================================== */
+
+#products {
+
+  background: url('../Images/bgp.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/* ==================================   Media   ===================================================== */
+.card-title{
+  text-align: center;
+}
+
+.card:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* ========================================= Footer ========================================================= */
+.page-footer{
+  background: #c7ecfa;
+  /* background:#1f1f1f url('/images/bg-structure-molecule.jpg')!important; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* =========================================== MEDIA QUERIES =========================== */
+
+@media all and (max-width: 880px) {
+  .d-flex{
+    flex-wrap: wrap;
+    
+  }
+
+  .about{
+    padding: 0;
+    margin: 0 ;
+  }
+
+  .card{
+    width: 100%;
+  }
+  .bg-doc {
+    /* background: rgb(185,231,242);
+    background: linear-gradient(-50deg, rgba(185,231,242,1) 47%, rgba(239,245,243,1) 47%); */
+  font-size: x-small;
+  
+  
+  }
+  .bg-img{
+    height: 80vh;
+
+  }
+  
+  
+.tabs{
+  
+  padding: 10px 10px;
+}
+
+
+
+}
+
+@media all and (max-width: 992px)  {
+  #navbar{
+
+    background: url('../Images/bgp.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .current{
+    border-bottom: none;
+    text-decoration: underline 2px solid #2b90d9;
+
+  }
+  .abt-txt{
+    background-color: rgba(68,193,239,.8);
+    font-size: .9rem;
+  }
+  
+
+}
+
+@media all and (max-width: 400px){
+  .box-tab{
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+transform: translateX(0);
+}
+
